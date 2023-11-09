@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:challenge_app/constants/utils/place_list.dart';
-import 'package:challenge_app/data/model/place.dart';
+import 'package:challenge_app/test1/constants/utils/place_list.dart';
+import 'package:challenge_app/test1/data/model/place.dart';
 
 part 'home_event.dart';
 part 'home_state.dart';

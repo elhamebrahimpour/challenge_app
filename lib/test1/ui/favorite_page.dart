@@ -1,5 +1,5 @@
-import 'package:challenge_app/bloc/favorite/favorite_bloc.dart';
-import 'package:challenge_app/ui/widgets/place_item.dart';
+import 'package:challenge_app/test1/bloc/favorite/favorite_bloc.dart';
+import 'package:challenge_app/test1/ui/widgets/place_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -24,8 +24,8 @@ class FavoritePage extends StatelessWidget {
                         height: 32,
                       ),
                       InkWell(
-                        onTap: () => BlocProvider.of<FavoriteBloc>(context)
-                            .add(DeleteFromFavorites(state.places![index].title!)),
+                        onTap: () => BlocProvider.of<FavoriteBloc>(context).add(
+                            DeleteFromFavorites(state.places![index].title!)),
                         child: const Icon(Icons.delete,
                             color: Colors.red, size: 32),
                       ),

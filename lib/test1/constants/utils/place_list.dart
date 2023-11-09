@@ -1,4 +1,4 @@
-import 'package:challenge_app/data/model/place.dart';
+import '../../data/model/place.dart';
 
 List<Place> getPlaceList() {
   var placeOne = Place(

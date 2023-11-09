@@ -1,14 +1,12 @@
-import 'package:badges/badges.dart';
-import 'package:challenge_app/bloc/favorite/favorite_bloc.dart';
-import 'package:challenge_app/bloc/home/home_bloc.dart';
-import 'package:challenge_app/constants/custom_color.dart';
-import 'package:challenge_app/ui/favorite_page.dart';
-import 'package:challenge_app/ui/widgets/place_item.dart';
+import 'package:challenge_app/test1/bloc/favorite/favorite_bloc.dart';
+import 'package:challenge_app/test1/bloc/home/home_bloc.dart';
+import 'package:challenge_app/test1/constants/custom_color.dart';
+import 'package:challenge_app/test1/ui/widgets/place_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key? key}) : super(key: key);
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -29,12 +27,12 @@ class _HomePageState extends State<HomePage> {
             Expanded(
               child: CustomScrollView(
                 slivers: [
-                  SliverToBoxAdapter(
+                  const SliverToBoxAdapter(
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 20, vertical: 20),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 20, vertical: 20),
                       child: Row(
-                        children: const [
+                        children: [
                           Text(
                             'Place arround you',
                             style: TextStyle(
@@ -129,7 +127,7 @@ class _GetHomePageHeader extends StatelessWidget {
                   child: Image.asset('assets/images/icon_menu.png'),
                 ),
                 const Spacer(),
-                Badge(
+                /*Badge(
                   badgeContent: Text(
                     '$badgeNumber',
                     style: const TextStyle(
@@ -155,7 +153,7 @@ class _GetHomePageHeader extends StatelessWidget {
                       child: Image.asset('assets/images/icon_favorite.png'),
                     ),
                   ),
-                ),
+                ),*/
               ],
             ),
             const SizedBox(

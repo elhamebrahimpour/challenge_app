@@ -1,5 +1,6 @@
-import 'package:challenge_app/constants/custom_color.dart';
-import 'package:challenge_app/data/model/place.dart';
+
+import 'package:challenge_app/test1/constants/custom_color.dart';
+import 'package:challenge_app/test1/data/model/place.dart';
 import 'package:flutter/material.dart';
 
 class PlaceItem extends StatelessWidget {
